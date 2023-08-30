@@ -1,82 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+    <head>
+        <title>Lux & Lux Travel Authority</title>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="script.js" defer></script>
+        <link rel="icon" href="img\L&L Logo.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lux and Lux Travel Authority</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Create a separate CSS file for styling -->
-</head>
-
-<body>
-    <!-- Landing Page -->
-    <header class="landing">
-        <!-- Wrapper div for the parallax image -->
-        <div class="parallax-wrapper">
-            <!-- Placeholder image, you can replace this with a stunning Star Wars scenery -->
-            <img src="img/Mountain Landscape.jpg" alt="Star Wars Scenery">
-        </div>
-        <div class="landing-overlay">
-            <h1>Lux and Lux Travel Authority</h1>
-            <p>Your journey to the Star Wars worlds begins here!</p>
-        </div>
-    </header>
-    <main>
-        <!-- Navigation Menu -->
-        <nav>
-            <!-- Use a sliding menu to feature different worlds -->
-            <ul>
-                <li><a href="#tatooine">Tatooine</a></li>
-                <li><a href="#naboo">Naboo</a></li>
-                <li><a href="#coruscant">Coruscant</a></li>
-                <!-- Add more worlds as per your requirement -->
-            </ul>
-        </nav>
-
-        <!-- Sections for Different Planets and Destinations -->
-        <section id="tatooine">
-            <h2>Tatooine</h2>
-            <!-- Placeholder image and description for Tatooine -->
-            <img src="img/Mountain Landscape.jpg" alt="Tatooine">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod metus id ipsum fringilla aliquet.</p>
-        </section>
-
-        <section id="naboo">
-            <h2>Naboo</h2>
-            <!-- Placeholder image and description for Naboo -->
-            <img src="img/Mountain Landscape.jpg" alt="Naboo">
-            <p>Phasellus accumsan dui nec luctus iaculis. Nullam vel est quis odio faucibus fringilla.</p>
-        </section>
-
-        <section id="coruscant">
-            <h2>Coruscant</h2>
-            <!-- Placeholder image and description for Coruscant -->
-            <img src="img/Mountain Landscape.jpg" alt="Coruscant">
-            <p>Etiam sit amet velit eu odio facilisis dignissim eget vel purus. Nam sit amet metus eu enim egestas
-                eleifend.</p>
-        </section>
-
-        <!-- Other sections for more planets and destinations -->
-
-        <!-- Grid of Images Representing Different Experiences -->
-        <section class="experiences">
-            <div class="grid">
-                <!-- Placeholder images with captions and hover effects for different experiences -->
+    <body>
+        <section id="navBar">
+            <div class="logo">
+                <img src="img/L&L Logo.png" alt="Lux & Lux Travel Authority Logo">
+            </div>
+            <div class="burgerMenu">
                 <div>
-                    <img src="img/Mountain Landscape.jpg" alt="Experience 1">
-                    <p>Experience 1 - Lorem ipsum dolor sit amet</p>
+                    <hr>
                 </div>
                 <div>
-                    <img src="img/Mountain Landscape.jpg" alt="Experience 2">
-                    <p>Experience 2 - Consectetur adipiscing elit</p>
+                    <hr>
                 </div>
-                <!-- Add more experience images and captions as per your requirement -->
+                <div>
+                    <hr>
+                </div>
             </div>
         </section>
-    </main>
-    <!-- You can include a footer with some additional information -->
 
-    <script src="script.js"></script> <!-- Create a separate JavaScript file for any custom scripting -->
-</body>
+        <section id="landing">
+            <div class="landImg"></div>
+            <div class="landText">
+                <h1>Experience the Galaxy</h1>
+            </div>
+        </section>
 
+        <!-- <section id="featured">
+            
+        </section> -->
+        <main>
+            <section id="experiences">
+                <div class="expFlex">
+                    <div class="expBox">
+                        <img src="img/greatCorporateSector.webp" alt="An image of the Corporate Sector">
+                        <div class="expBoxText">
+                            <h3>Experience Commerce</h3>
+                        </div>
+                    </div>
+                    <div class="expBox">
+                        <img src="img/serenityNaboo.jpg" alt="An image of Naboo">
+                        <div class="expBoxText">
+                            <h3>Experience Serenity</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="expFlex">
+                    <div class="expBox">
+                        <img src="img/greatTreeKashyyyk.jpg" alt="An image of Kashyyyk">
+                        <div class="expBoxText">
+                            <h3>Experience Adventure</h3>
+                        </div>
+                    </div>
+                    <div class="expBox">
+                        <img src="img/landingAreaCoruscant.jpg" alt="An image of Coruscant">
+                        <div class="expBoxText">
+                            <h3>Experience Elegance</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="map">
+                <div class="core"></div>
+                <div class="midRim"></div>
+                <div class="outerRim"></div>
+            </section>
+        </main>
+        <section id="footer">
+            <div class="aboutLink"><a href="">About</a></div>
+            <div class="signature">Apex Incarna</div>
+        </section>
+
+    </body>
 </html>
