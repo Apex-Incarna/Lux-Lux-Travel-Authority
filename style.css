@@ -15,11 +15,15 @@ body {
     padding: 0;
     overflow-x: hidden;
     background-color: rgb(58, 58, 58);
+    background-image: url(img/unsplashBackground.jpg);
+    background-repeat: round;
 }
 
 main {
-    margin: 0 5%;
+    margin: 0 8%;
     font-family: 'Quantico', sans-serif;
+    background-color: rgb(120, 120, 120);
+    height: 200vh;  /* This could be a real issue later so make sure you make note of it */
 }
 
 
@@ -95,20 +99,44 @@ main {
 
 /* Experiences */
 
-.expFlex {
+#experiences {
     width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    /* justify-content: space-around; */
 }
 
 .expBox {
-    background-color: black;
     padding: 1%;
     color: white;
+    width: 20%;
+    position: relative;
+    transition: background-color .1s;
+    transition: transform .5s;
+    margin: 1%;
 }
 
 .expBox img {
-    width: 30vw;
-    /* height: 50%; */
+    width: 100%;
+    border: 5px double rgb(255, 255, 255);
+    /* border-radius: 5%; */
+}
+
+.expBox h3 {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    position: absolute;
+    bottom: 11%;
+    width: min-content;
+    max-width: 80%;
+    padding: 1% 5%;
+    text-align: left;
+    font-size: 1.5vw;
+}
+
+.expBox:hover {
+    transform: scale(1.05);
+    cursor: pointer;
 }
