@@ -15,14 +15,14 @@ body {
     padding: 0;
     overflow-x: hidden;
     background-color: rgb(58, 58, 58);
-    background-image: url(img/unsplashBackground.jpg);
-    background-repeat: round;
+    /* background-image: url(img/unsplashBackground.jpg);
+    background-repeat: round; */
+    background-image: url(img/noiseBackground.png);
 }
 
 main {
     margin: 0 8%;
-    font-family: 'Quantico', sans-serif;
-    background-color: rgb(120, 120, 120);
+    /* background-color: rgb(120, 120, 120); */
     height: 200vh;  /* This could be a real issue later so make sure you make note of it */
 }
 
