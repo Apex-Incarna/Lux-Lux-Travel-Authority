@@ -24,7 +24,7 @@ body {
 main {
     margin: 0 2%;
     /* background-color: rgb(120, 120, 120); */
-    height: 200vh;  /* This could be a real issue later so make sure you make note of it */
+    min-height: 200vh;  /* This could be a real issue later so make sure you make note of it */
 }
 
 
@@ -103,25 +103,57 @@ main {
 #experiences {
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
+    align-items: center;
     /* justify-content: space-around; */
 }
 
 .expBox {
     padding: 1%;
     color: white;
-    width: 20%;
+    width: 80%;
     position: relative;
     transition: background-color .1s;
     transition: transform .5s;
     margin: 1%;
 }
 
-.expBox img {
+.exp1 {
     width: 100%;
-    border: 5px double rgb(255, 255, 255);
+    height: 60vh;
+    border: 5px double rgb(249, 208, 26);
+    background-image: url("/img/greatCorporateSector.webp");
+    background-size: cover;
+    /* border-radius: 5%; */
+}
+
+.exp2 {
+    width: 100%;
+    height: 60vh;
+    border: 5px double rgb(249, 208, 26);
+    background-image: url("/img/serenityNaboo.jpg");
+    background-size: cover;
+    /* border-radius: 5%; */
+    
+}
+
+.exp3 {
+    width: 100%;
+    height: 60vh;
+    border: 5px double rgb(249, 208, 26);
+    background-image: url("/img/greatTreeKashyyyk.jpg");
+    background-size: cover;
+    /* border-radius: 5%; */
+}
+
+.exp4 {
+    width: 100%;
+    height: 60vh;
+    border: 5px double rgb(249, 208, 26);
+    background-image: url("/img/landingAreaCoruscant.jpg");
+    background-size: cover;
     /* border-radius: 5%; */
 }
 
@@ -129,12 +161,12 @@ main {
     background-color: rgb(255, 255, 255);
     color: black;
     position: absolute;
-    bottom: 11%;
-    width: min-content;
-    max-width: 80%;
+    bottom: 15%;
+    width: max-content;
+    /* max-width: 80%; */
     padding: 1% 5%;
     text-align: left;
-    font-size: 1.5vw;
+    font-size: 3vw;
 }
 
 .expBox:hover {
